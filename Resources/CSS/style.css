@@ -1,0 +1,174 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+/* Navigation bar - simple styling copied from github repo */
+
+.nav {
+    overflow: hidden;
+    background-color: #000;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+}
+.nav ul { 
+	margin: 0; 
+	padding: 20px; 
+	list-style-type: none; 
+	text-align: center; 
+	} 
+ 
+.nav ul li {  
+	display: inline; 
+	} 
+ 
+.nav ul li a { 
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color: #fff; 
+	background-color: #000; 
+	}
+ 
+.nav ul li a:hover { 
+	background-color: rgba(255, 255, 255, 0.288); 
+    }
+
+.main_headline {
+    font-family: 'MedievalSharp', cursive;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+    
+.parallax_1 {
+    background-image: url("../IMAGES/LogosDadsBandSide.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 700px;
+    color: #fff;
+}
+
+/* Change Year Number */
+
+#scroll_1:before{
+    content: '8';
+    font-size: 100%;
+    animation-name: yearChange;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+
+@keyframes yearChange {
+    0% {font-size:100%; content: "7"}
+    20% {font-size:100%}
+    50% {font-size:20%; content: "7"}
+    51% {font-size:20%; content: "8"}
+    80% {font-size:100%}
+    100% {font-size:100%; content: "8"}
+}
+
+/* Change Anniversary Number */
+
+#scroll_2:before{
+    content: '1';
+    font-size: 100%;
+    animation-name: numberChange;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes numberChange {
+    0% {font-size:100%; content: "0"}
+    20% {font-size:100%}
+    50% {font-size:20%; content: "0"}
+    51% {font-size:20%; content: "1"}
+    80% {font-size:100%}
+    100% {font-size:100%; content: "1"}
+}
+
+/* Bands */
+
+.playlist {
+    text-align: center;
+}
+
+.bands {
+    columns: 2;
+    list-style: none;
+    padding: 0;
+    font-size: 2em;
+}
+
+.parallax_2 {
+    background-image: url("../IMAGES/LogosDadsBandDWGCD.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.showtime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    min-height: 600px;
+}
+
+a {
+    font-size: 1.0rem;
+}
+
+.details {
+    margin: 10px 0;
+}
+
+.parallax_3 {
+    background-image: url("../IMAGES/LogosDadsBandLogo.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.highlights {
+    text-align: center;
+    min-height: 650px;
+}
+
+.highlights_links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 200px;
+    width: auto;
+}
+
+.parallax_4 {
+    background-image: url("../IMAGES/LogosDadsBandFull3000.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 650px;
+    padding-top: 50px;
+    color: #fff;
+}
